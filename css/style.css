@@ -60,6 +60,8 @@ html {
   text-decoration: none;
 }
 .btn--primary {
+  animation-name: example;
+  animation-duration: 3s;
   letter-spacing: 0.4rem;
   position: relative;
   left: 5rem;
@@ -520,12 +522,78 @@ p {
   width: 100%;
 }
 
-.fcf-btn-block + .fcf-btn-block {
-  margin-top: 0.5rem;
-}
-
 input[type="submit"].fcf-btn-block,
 input[type="reset"].fcf-btn-block,
 input[type="button"].fcf-btn-block {
   width: 100%;
+}
+
+.fcf-btn-block + .fcf-btn-block {
+  margin-top: 0.5rem;
+}
+
+.random2 {
+  z-index: -1;
+  position: absolute;
+  top: 277rem;
+  width: 100vw;
+  height: 43rem;
+  background: #0d80c7;
+  clip-path: polygon(0 39%, 100% 20%, 100% 100%, 0 100%);
+}
+.footertxt {
+  z-index: 123;
+  color: white;
+  margin-top: 19rem;
+  text-align: center;
+}
+
+.random3 {
+  z-index: -1;
+  position: absolute;
+  top: 275rem;
+  width: 100vw;
+  height: 30rem;
+  background: #0d80c7;
+  clip-path: polygon(0 28%, 100% 20%, 100% 26%, 0 45%);
+}
+@keyframes example {
+  20% {
+    background-color: #b9f255;
+    left: 2rem;
+  }
+  60% {
+    background-color: #ffab91;
+    left: 4rem;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.footertxt1 {
+  z-index: 123;
+  color: white;
+  margin-top: 28rem;
+  text-align: center;
 }
