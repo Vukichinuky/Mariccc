@@ -25,6 +25,15 @@ html {
   height: 15rem;
   width: 18rem;
 }
+@media screen and (min-width: 600px) {
+  .logo1 {
+    height: 100%;
+    width: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
 .droplet {
   position: absolute;
   top: 12rem;
@@ -63,9 +72,16 @@ html {
   animation-duration: 3s;
   letter-spacing: 0.4rem;
   position: relative;
+  top: 4rem;
   left: 5rem;
   color: white;
   background: #0d80c7;
+}
+@media only screen and (min-width: 600px) {
+  .btn--primary {
+    margin-left: 34%;
+    margin-right: 34%;
+  }
 }
 .random {
   background: #0d80c7;
@@ -397,6 +413,14 @@ p {
   );
 }
 
+@media only screen and (min-width: 600px) {
+  .grid-1-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
 .random1 {
   z-index: -1;
   position: absolute;
@@ -485,6 +509,22 @@ p {
   position: relative;
   top: -5rem;
   width: 14rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .img1 {
+    padding: 2rem;
+    width: 17rem;
+  }
+  .img2 {
+    left: 0;
+    width: 17rem;
+  }
+  .img3 {
+    top: 0;
+    padding: 2rem;
+    width: 17rem;
+  }
 }
 .portfolio {
   height: 30rem;
